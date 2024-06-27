@@ -16,12 +16,6 @@ fi
 sync_apps() {
     # Only sync if the DISABLE_SYNC environment variable is not set
     if [ -z "${DISABLE_SYNC}" ]; then
-        # Sync main venv to workspace to support Network volumes
-        echo "Syncing main venv to workspace, please wait..."
-        mkdir -p ${VENV_PATH}
-        mv /venv/* ${VENV_PATH}/
-        rm -rf /venv
-
         # Sync application to workspace to support Network volumes
         echo "Syncing ${APP} to workspace, please wait..."
         mv /${APP} /workspace/${APP}
