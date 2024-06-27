@@ -5,7 +5,6 @@ export APP="InvokeAI"
 DOCKER_IMAGE_VERSION_FILE="/workspace/${APP}/docker_image_version"
 
 echo "Template version: ${TEMPLATE_VERSION}"
-echo "venv: ${VENV_PATH}"
 
 if [[ -e ${DOCKER_IMAGE_VERSION_FILE} ]]; then
     EXISTING_VERSION=$(cat ${DOCKER_IMAGE_VERSION_FILE})
