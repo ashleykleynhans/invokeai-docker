@@ -37,7 +37,7 @@ sync_apps() {
 
 fix_venvs() {
     echo "Fixing venv..."
-    /fix_venv.sh /venv ${VENV_PATH}    /fix_venv.sh /InvokeAI/venv /workspace/InvokeAI/venv
+    /fix_venv.sh /InvokeAI/venv /workspace/InvokeAI/venv
 }
 
 if [ "$(printf '%s\n' "$EXISTING_VERSION" "$TEMPLATE_VERSION" | sort -V | head -n 1)" = "$EXISTING_VERSION" ]; then
