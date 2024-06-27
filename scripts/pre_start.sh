@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 export PYTHONUNBUFFERED=1
-export APP="invokeai"
+export APP="InvokeAI"
 DOCKER_IMAGE_VERSION_FILE="/workspace/${APP}/docker_image_version"
 
 echo "Template version: ${TEMPLATE_VERSION}"
