@@ -56,7 +56,7 @@ then
     echo "Auto launching is disabled so the applications will not be started automatically"
     echo "You can launch them manually using the launcher scripts:"
     echo ""
-    echo "   /start_invokeat.sh"
+    echo "   /start_invokeai.sh"
 else
     /start_invokeai.sh
 fi
