@@ -18,7 +18,8 @@
 * Python 3.10.12
 * Torch 2.3.0
 * xformers 0.0.26.post1
-* Jupyter Lab
+* [Jupyter Lab](https://github.com/jupyterlab/jupyterlab)
+* [code-server](https://github.com/coder/code-server)
 * [InvokeAI](https://github.com/invoke-ai/InvokeAI) v4.2.5
 * [runpodctl](https://github.com/runpod/runpodctl)
 * [OhMyRunPod](https://github.com/kodxana/OhMyRunPod)
@@ -78,6 +79,7 @@ docker run -d \
   -v /workspace \
   -p 2999:2999 \
   -p 3000:3001 \
+  -p 7777:7777 \
   -p 8000:8000 \
   -p 8888:8888 \
   -e JUPYTER_PASSWORD=Jup1t3R! \
@@ -91,6 +93,7 @@ You can obviously substitute the image name and tag with your own.
 | Connect Port | Internal Port | Description          |
 |--------------|---------------|----------------------|
 | 3000         | 3001          | InvokeAI             |
+| 7777         | 7777          | Code Server          |
 | 8000         | 8000          | Application Manager  |
 | 8888         | 8888          | Jupyter Lab          |
 | 2999         | 2999          | RunPod File Uploader |
@@ -111,6 +114,13 @@ killing the service to view the logs
 | Application             | Log file                     |
 |-------------------------|------------------------------|
 | InvokeAI                | /workspace/logs/invokeai.log |
+
+## Acknowledgements
+
+A special word of thanks to [Madiator2011](https://github.com/kodxana) for advice
+and suggestions on improving these images, as well as all of the code for the
+code-server which was borrowed from his [madiator-docker-runpod](
+https://github.com/kodxana/madiator-docker-runpod) GitHub repository.
 
 ## Community and Contributing
 

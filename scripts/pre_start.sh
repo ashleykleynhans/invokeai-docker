@@ -24,19 +24,13 @@ sync_apps() {
         mv /app-manager /workspace/app-manager
 
         echo "${TEMPLATE_VERSION}" > ${DOCKER_IMAGE_VERSION_FILE}
-        echo "${VENV_PATH}" > "/workspace/${APP}/venv_path"
     fi
 }
 
-fix_venvs() {
-    echo "Fixing venv..."
-    /fix_venv.sh /InvokeAI/venv /workspace/InvokeAI/venv
-}
 
 if [ "$(printf '%s\n' "$EXISTING_VERSION" "$TEMPLATE_VERSION" | sort -V | head -n 1)" = "$EXISTING_VERSION" ]; then
     if [ "$EXISTING_VERSION" != "$TEMPLATE_VERSION" ]; then
         sync_apps
-        fix_venvs
 
         # Create logs directory
         mkdir -p /workspace/logs
