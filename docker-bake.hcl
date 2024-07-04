@@ -36,7 +36,7 @@ variable "TORCH_VERSION" {
 
 target "default" {
     dockerfile = "Dockerfile"
-    tags = ["${REGISTRY}/${REGISTRY_USER}/${APP}:${RELEASE}.post1"]
+    tags = ["${REGISTRY}/${REGISTRY_USER}/${APP}:${RELEASE}.post2"]
     args = {
         RELEASE = "${RELEASE}"
         BASE_IMAGE = "${BASE_IMAGE_REPOSITORY}:${BASE_IMAGE_VERSION}-cuda${CUDA_VERSION}-torch${TORCH_VERSION}"
@@ -44,7 +44,7 @@ target "default" {
         TORCH_VERSION = "${TORCH_VERSION}+cu${CU_VERSION}"
         XFORMERS_VERSION = "0.0.26.post1"
         INVOKEAI_VERSION = "4.2.5"
-        APP_MANAGER_VERSION = "1.1.0"
+        APP_MANAGER_VERSION = "1.2.1"
         CIVITAI_DOWNLOADER_VERSION = "2.1.0"
     }
 }
