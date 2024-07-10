@@ -16,8 +16,8 @@
 * Ubuntu 22.04 LTS
 * CUDA 12.1
 * Python 3.10.12
-* Torch 2.3.0
-* xformers 0.0.26.post1
+* Torch 2.3.1
+* xformers 0.0.27
 * [Jupyter Lab](https://github.com/jupyterlab/jupyterlab)
 * [code-server](https://github.com/coder/code-server)
 * [InvokeAI](https://github.com/invoke-ai/InvokeAI) v4.2.5
