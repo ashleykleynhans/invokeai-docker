@@ -15,12 +15,12 @@
 
 * Ubuntu 22.04 LTS
 * CUDA 12.1
-* Python 3.10.12
+* Python 3.11.9
 * Torch 2.2.2
 * xformers 0.0.25.post1
 * [Jupyter Lab](https://github.com/jupyterlab/jupyterlab)
 * [code-server](https://github.com/coder/code-server)
-* [InvokeAI](https://github.com/invoke-ai/InvokeAI) v4.2.5
+* [InvokeAI](https://github.com/invoke-ai/InvokeAI) v4.2.6
 * [runpodctl](https://github.com/runpod/runpodctl)
 * [OhMyRunPod](https://github.com/kodxana/OhMyRunPod)
 * [RunPod File Uploader](https://github.com/kodxana/RunPod-FilleUploader)
