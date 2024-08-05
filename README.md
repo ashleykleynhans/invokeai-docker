@@ -20,7 +20,7 @@
 * xformers 0.0.25.post1
 * [Jupyter Lab](https://github.com/jupyterlab/jupyterlab)
 * [code-server](https://github.com/coder/code-server)
-* [InvokeAI](https://github.com/invoke-ai/InvokeAI) v4.2.7
+* [InvokeAI](https://github.com/invoke-ai/InvokeAI) v4.2.7post1
 * [runpodctl](https://github.com/runpod/runpodctl)
 * [OhMyRunPod](https://github.com/kodxana/OhMyRunPod)
 * [RunPod File Uploader](https://github.com/kodxana/RunPod-FilleUploader)
